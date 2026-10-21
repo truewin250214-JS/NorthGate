@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#334b3c">
+<title>2026 馬偕行腳｜車長 Rundown</title>
+<style>
+:root{--ink:#26352d;--green:#334b3c;--olive:#657b58;--sage:#e8eee4;--cream:#fbf8f1;--sand:#eee4d2;--gold:#c99d5b;--muted:#6d756e;--line:#e3e5dc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:#f2f3ed;color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.hero{padding:54px 20px 48px;text-align:center;color:#fffdf6;background:radial-gradient(circle at 15% 15%,#6f8564 0,transparent 32%),linear-gradient(135deg,#263b30,#4b644d)}
+.kicker{font-size:.86rem;letter-spacing:.18em;color:#e6d7b7;font-weight:800}
+h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.25;margin:12px auto;max-width:900px}
+.hero p{max-width:760px;margin:12px auto 0;color:#e9eee5}
+.hero-line{width:72px;height:4px;background:var(--gold);border-radius:10px;margin:22px auto}
+.hero-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.pill{display:inline-flex;align-items:center;padding:5px 12px;border:1px solid #ffffff45;background:#ffffff12;border-radius:999px;font-size:.88rem}
+.nav{position:sticky;top:0;z-index:10;background:#fffdf8ed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;display:flex;gap:6px;padding:10px 14px;overflow-x:auto}
+.nav a{white-space:nowrap;padding:7px 12px;border-radius:999px;font-size:.9rem;font-weight:750}
+.nav a:hover{background:var(--sage)}
+main{max-width:1120px;margin:28px auto;padding:0 18px 55px}
+.intro,.section{background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 26px #23372908}
+.intro{padding:22px 25px;margin-bottom:20px}
+.intro strong{color:var(--olive)}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.quick-card{background:var(--cream);border:1px solid var(--sand);padding:14px;border-radius:14px}
+.quick-card b{display:block;color:var(--green);font-size:.9rem}
+.quick-card span{font-weight:800}
+.section{padding:26px;margin:20px 0;scroll-margin-top:84px}
+.section-head{display:flex;gap:13px;align-items:flex-start;margin-bottom:18px}
+.num{display:grid;place-items:center;flex:0 0 44px;height:44px;background:var(--sage);color:var(--green);border-radius:14px;font-weight:900}
+h2{font-size:1.45rem;line-height:1.4;margin:0}
+.sub{margin:4px 0 0;color:var(--muted);font-size:.94rem}
+.phase-meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.meta{font-size:.86rem;font-weight:750;background:#f5f2e9;border:1px solid var(--sand);padding:4px 10px;border-radius:999px;color:#66563d}
+.item{border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.item-title{display:flex;align-items:center;gap:10px;background:#f8faf6;padding:12px 15px;font-weight:850}
+.item-title .time{margin-left:auto;white-space:nowrap;font-size:.82rem;color:var(--olive);background:var(--sage);padding:2px 9px;border-radius:999px}
+.item-body{padding:14px 16px}
+.item-body p{margin:5px 0}
+.item-body ol,.item-body ul{margin:6px 0;padding-left:1.35rem}
+.script{background:var(--cream);border-left:4px solid var(--gold);padding:12px 15px;border-radius:0 10px 10px 0;margin:10px 0}
+.script-label{font-size:.78rem;font-weight:900;letter-spacing:.08em;color:#8a6b35;margin-bottom:4px}
+.note{padding:12px 15px;background:#fff6e7;border:1px solid #f0dfbd;border-radius:12px;margin-top:14px}
+.note strong{color:#785522}
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.check{display:flex;gap:10px;align-items:flex-start;background:#f8faf6;border:1px solid var(--line);padding:12px;border-radius:12px}
+.check input{margin-top:7px;accent-color:var(--olive);width:17px;height:17px;flex-shrink:0}
+.check span{flex:1}
+.check:has(input:checked) span{text-decoration:line-through;color:#8a938b}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.qa-card{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
+.qa-card b{display:block;color:var(--green);margin-bottom:5px}
+.qa-card span{color:var(--muted);font-size:.92rem}
+.footer{text-align:center;padding:10px 15px 34px;color:var(--muted);font-size:.88rem}
+.toplink{display:inline-block;margin-top:8px;color:var(--green);font-weight:800}
+@media(max-width:700px){.hero{padding:40px 18px 36px}.quick,.checklist,.qa{grid-template-columns:1fr}.section{padding:20px 15px}.intro{padding:18px}.item-title{align-items:flex-start}.item-title .time{margin-left:auto}.nav-inner{padding:8px}.nav a{font-size:.84rem;padding:6px 10px}}
+@media print{.nav,.toplink{display:none}.hero{background:#fff;color:var(--ink);border-bottom:2px solid var(--green)}.hero p,.kicker{color:var(--green)}body{background:#fff}.intro,.section{box-shadow:none;break-inside:avoid}.item{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="kicker">2026 · 新竹北門聖教會 · 橄欖樹牧區</div>
+  <h1>馬偕行腳<br>車長 Rundown</h1>
+  <div class="hero-line"></div>
+  <p>用眼睛看馬偕所愛的台灣，走訪他曾到過、用生命孕育的地方；在宜蘭頭城與礁溪，一起體會馬偕的愛。</p>
+  <div class="hero-tags"><span class="pill">第一天｜10/24（六）</span><span class="pill">車長口播與流程提醒</span><span class="pill">依天候及總部安排彈性調整</span></div>
+</header>
+<nav class="nav" aria-label="頁面導覽"><div class="nav-inner">
+<a href="#overview">流程總覽</a><a href="#phase1">北門出發</a><a href="#phase2">中壢休息站</a><a href="#phase3">前往頭城</a><a href="#phase4">午餐</a><a href="#church">頭城長老教會</a><a href="#stay">住宿與晚間</a><a href="#checklist">車長檢查表</a><a href="#quiz">有獎徵答</a>
+</div></nav>
+<main>
+<section class="intro" id="overview">
+<strong>車長使用提醒</strong><br>
+整理第一天車長口播、時間掌控、清點人數與上下車提醒。請依實際交通、天候及總部通知彈性調整。
+<div class="quick">
+<div class="quick-card"><b>第一站</b><span>中壢服務區</span><small>預計停留時間約 10 分鐘</small></div>
+<div class="quick-card"><b>第二站</b><span>頭城濱海公園</span><small>預計停留時間約 1 小時，視天候</small></div>
+<div class="quick-card"><b>第三站</b><span>中餐｜東東熱炒</span><small>預計用餐時間約 1.5 小時</small></div>
+<div class="quick-card"><b>第四站</b><span>頭城長老教會</span><small>預計拜訪參觀時間約 2 小時</small></div>
+<div class="quick-card"><b>第五站</b><span>民宿｜品雲岫</span><small></small></div>
+<div class="quick-card"><b>民宿時光</b><span>健康操＋闖關活動</span><small></small></div>
+<div class="quick-card"><b>晚餐</b><span>Buffet</span><small></small></div>
+<div class="quick-card"><b>幸福之夜</b><span></span><small></small></div>
+</div>
+</section>
+
+<section class="section" id="phase1">
+<div class="section-head"><div class="num">01</div><div><h2>第一階段｜北門出發，前往中壢服務區</h2><p class="sub">上國道後進行自我介紹、團員交流及上午行程說明。</p></div></div>
+<div class="phase-meta"><span class="meta">估計車程：約 35–40 分鐘</span><span class="meta">車長介紹：約 2 分鐘</span><span class="meta">團員介紹：約 20 分鐘</span><span class="meta">行程說明：約 10 分鐘</span></div>
+<div class="item"><div class="item-title">一、車長自我介紹 <span class="time">約 2 分鐘</span></div><div class="item-body">
+<div class="script"><div class="script-label">口播參考</div>各位弟兄姊妹、各位朋友，大家早安！很開心能與大家一起參加橄欖樹牧區所舉辦的「馬偕行腳」活動。在這兩天的旅程中，讓我們用眼睛去看馬偕所愛的台灣，特別是宜蘭頭城、礁溪這些馬偕曾經到過、用生命孕育的地方，一起去體會馬偕的愛。</div>
+<ol><li>我是誰：介紹自己的姓名。</li><li>車長職責：負責本車人員清點、時間掌控、向總部通知與報告，以及行程提醒。</li><li>我的小幫手是：介紹協助人員。</li><li>請大家先看看前、後、左、右的座位鄰居；清點人數時，若發現鄰座的夥伴不在，請主動通報車長或小幫手。</li></ol>
+</div></div>
+<div class="item"><div class="item-title">二、團員自我介紹 <span class="time">約 20 分鐘</span></div><div class="item-body"><p>邀請大家簡短分享：</p><ul><li>我是誰？</li><li>是誰邀請我來參加？</li><li>對這趟旅程有什麼期待或想法？</li></ul><p>可依車上人數與時間調整分享長度。</p></div></div>
+<div class="item"><div class="item-title">三、第一階段行程說明 <span class="time">約 10 分鐘</span></div><div class="item-body">
+<div class="script"><div class="script-label">口播參考</div>請大家看一下群組裡的行程說明，我先簡單報告今天上午的安排。首先我們會前往中壢服務區，車程大約 35 至 40 分鐘，停留時間約 10 分鐘，實際依現場安排為準。接著前往頭城濱海公園，車程約 1 小時 20 分鐘，會依交通與天氣狀況調整。</div>
+<ol><li>中壢服務區：預計休息約 10 分鐘（視安排）。</li><li>頭城濱海公園：導覽、散步、自由拍照及使用洗手間，約停留 1 小時（視天候）。</li><li>前往午餐地點「東東快炒」：車程約 15 分鐘。</li><li>午餐時間：約 90 分鐘；請依名牌上的資訊確認用餐桌號。</li></ol>
+</div></div>
+</section>
+
+<section class="section" id="phase2">
+<div class="section-head"><div class="num">02</div><div><h2>第二階段｜抵達中壢服務區</h2><p class="sub">接近服務區前先口頭提醒，停靠後清點人數。</p></div></div>
+<div class="phase-meta"><span class="meta">停留約 10 分鐘</span><span class="meta">依現場安排調整</span></div>
+<div class="item"><div class="item-title">一、抵達前提醒</div><div class="item-body"><div class="script"><div class="script-label">口播參考</div>各位夥伴，我們快要抵達中壢服務區，預計停留約 10 分鐘，實際時間依現場安排。請大家記得我們是「XXX-XXXX」O 車（請依名牌確認）。下車時帶著貴重物品即可，其餘物品可以留在車上。上下車請注意腳步與安全，莫急、莫慌、莫趕。</div></div></div>
+<div class="item"><div class="item-title">二、停靠後與再次上車</div><div class="item-body"><div class="checklist"><label class="check"><input type="checkbox"><span>提醒團員留意休息時間與集合時間。</span></label><label class="check"><input type="checkbox"><span>上車後清查人數，確認全員到齊。</span></label><label class="check"><input type="checkbox"><span>提醒大家確認隨身物品沒有遺漏。</span></label><label class="check"><input type="checkbox"><span>確認無誤後，繼續前往頭城濱海公園。</span></label></div></div></div>
+</section>
+
+<section class="section" id="phase3">
+<div class="section-head"><div class="num">03</div><div><h2>第三階段｜中壢服務區前往頭城濱海公園</h2><p class="sub">車程約 1 小時 20 分鐘，影片播放安排視天候及行程而定。</p></div></div>
+<div class="phase-meta"><span class="meta">影片導言：約 2 分鐘</span><span class="meta">馬偕影片：約 48 分鐘</span><span class="meta">有獎徵答：約 5 分鐘</span><span class="meta">後續影音視時間安排</span></div>
+<div class="item"><div class="item-title">一、影片導言 <span class="time">約 2 分鐘</span></div><div class="item-body"><div class="script"><div class="script-label">口播參考</div>接下來的車程中，我們會透過影片更認識這趟「馬偕腳蹤學習體驗之旅」的主角——馬偕博士。希望大家不只是認識他的生平，也能想一想他如何愛台灣、服務人群。影片結束後會有簡單的有獎徵答，歡迎大家一起參與！</div></div></div>
+<div class="item"><div class="item-title">二、影片欣賞 <span class="time">約 48 分鐘</span></div><div class="item-body"><p><strong>播放影片：</strong>《台灣演義》馬偕（2022.06.05）</p><p class="sub">播放前請確認車上音量、播放設備與影片是否正常。</p></div></div>
+<div class="item"><div class="item-title">三、有獎徵答 <span class="time">約 5 分鐘</span></div><div class="item-body"><p>以下題目可供車長參考，也可依現場氣氛自行出題。</p><div class="qa">
+<div class="qa-card"><b>Q1｜馬偕醫院前身是什麼？</b><span>答案：滬尾偕醫館（原稿記載「滬醫館」，建議出發前確認正式名稱）。</span></div>
+<div class="qa-card"><b>Q2｜馬偕博士的妻子是誰？</b><span>答案：張聰明。</span></div>
+<div class="qa-card"><b>Q3｜馬偕博士的綽號是什麼？</b><span>答案：黑鬚番。</span></div>
+<div class="qa-card"><b>Q4｜淡水中學前身、馬偕創辦的學堂是？</b><span>答案：牛津學堂。</span></div>
+<div class="qa-card"><b>Q5｜馬偕於 1901 年所寫、表達對台灣深厚情感的台語詩歌是？</b><span>答案：〈最後的住家〉。</span></div>
+</div></div></div>
+<div class="item"><div class="item-title">四、其他影音（視天候與時間）</div><div class="item-body"><ul><li>《馬偕小旅行：頭城・打馬煙》：約 4 分鐘；視天氣情況，有前往頭城濱海公園才播放。</li><li>詩歌欣賞〈最後的住家〉：約 6 分鐘。</li></ul><div class="note"><strong>時間提醒：</strong>原稿所列影片、問答及詩歌時間合計可能超過部分車程，請車長依實際路況與抵達時間彈性安排，不必勉強播完。</div></div></div>
+<div class="item"><div class="item-title">五、抵達頭城濱海公園前提醒</div><div class="item-body"><div class="script"><div class="script-label">口播參考</div>各位夥伴，我們即將抵達頭城濱海公園，預計停留約 1 小時，實際依天氣與現場安排調整。請確認車號是「XXX-XXXX」O 車（依名牌為準）。下車時帶著貴重物品即可，其餘可以留在車上。上下車請注意腳步與安全，莫急、莫慌、莫趕。</div><p>再次上車後，請清查人數並確認大家的隨身物品沒有遺漏，再繼續前往東東快炒。</p></div></div>
+</section>
+
+<section class="section" id="phase4">
+<div class="section-head"><div class="num">04</div><div><h2>第四階段｜頭城濱海公園前往東東快炒</h2><p class="sub">車程約 10–15 分鐘；午餐時間約 90 分鐘。</p></div></div>
+<div class="item"><div class="item-title">一、午餐前提醒</div><div class="item-body"><div class="script"><div class="script-label">口播參考</div>接下來我們要前往東東快炒用午餐，用餐時間約 90 分鐘。請大家依名牌上的桌號入座。下車時貴重物品請隨身帶著，其餘物品可以留在車上；上下車請注意腳步與安全，莫急、莫慌、莫趕。</div></div></div>
+<div class="item"><div class="item-title">二、午餐後集合上車</div><div class="item-body"><div class="checklist"><label class="check"><input type="checkbox"><span>提醒團員依約定時間返回集合點。</span></label><label class="check"><input type="checkbox"><span>清查人數，確認全員到齊。</span></label><label class="check"><input type="checkbox"><span>提醒確認手機、錢包等隨身物品。</span></label><label class="check"><input type="checkbox"><span>確認無誤後，繼續前往頭城長老教會。</span></label></div></div></div>
+</section>
+
+<section class="section" id="church">
+<div class="section-head"><div class="num">05</div><div><h2>東東快炒前往頭城長老教會</h2><p class="sub">原稿標示車程約 10 分鐘。</p></div></div>
+<div class="item"><div class="item-title">一、抵達前與下車提醒</div><div class="item-body"><ul><li>發放「導覽機」，並提醒每位團員妥善保管。</li><li>下車後依總召指示集合並跟隨隊伍。</li><li>貴重物品請隨身帶下車，其餘物品可留置車上。</li><li>上下車注意腳步與安全，莫急、莫慌、莫趕。</li></ul></div></div>
+<div class="item"><div class="item-title">二、離開前清點</div><div class="item-body"><div class="checklist"><label class="check"><input type="checkbox"><span>清查人數，確認全員到齊。</span></label><label class="check"><input type="checkbox"><span>確認導覽機依現場指示妥善處理。</span></label><label class="check"><input type="checkbox"><span>確認團員隨身物品無遺漏。</span></label><label class="check"><input type="checkbox"><span>向團員說明下一站並確認出發。</span></label></div></div></div>
+</section>
+
+<section class="section" id="stay">
+<div class="section-head"><div class="num">06</div><div><h2>第五階段｜頭城長老教會前往品雲岫</h2><p class="sub">原稿估計車程約 20 分鐘；抵達後說明住宿、健康操、闖關與晚間活動。</p></div></div>
+<div class="item"><div class="item-title">一、住宿須知與房號辨識</div><div class="item-body"><div class="script"><div class="script-label">口播參考</div>抵達品雲岫後，請各房派一位代表向服務組領取房卡。房號請看自己的名牌：第 1 碼是棟別、第 2 碼是樓層、第 3 碼是房間號。進房後請先檢查房間環境、相關設施，以及浴室冷熱水是否正常；若發現異常或破損，請立即向服務組反映。</div>
+<ul><li>棟別：1～7 代表 A1～A7 棟；8 代表 B 棟。</li><li>例：821＝B 棟 2 樓 1 號房。</li><li>例：321＝A3 棟 2 樓 1 號房。</li><li><strong>B 棟每一層都有電梯，長輩的房間安排在這裡。</strong></li></ul></div></div>
+<div class="item"><div class="item-title">二、整理與健康操、親子趣味闖關</div><div class="item-body"><p>進入房間稍作整理，約 16:30 前往交誼廳。</p><div class="script"><div class="script-label">口播參考</div>稍後我們有專業又親切的老師帶領大家跳健康操，也安排了親子趣味闖關活動，歡迎大家踴躍參加，一起活動筋骨、享受團隊同樂的時光！</div></div></div>
+<div class="item"><div class="item-title">三、晚餐與幸福之夜</div><div class="item-body"><ul><li><strong>晚餐：</strong>精美 Buffet。</li><li><strong>晚間活動：</strong>幸福之夜。</li></ul><p class="sub">實際集合時間與活動細節，請依總召或工作人員現場通知。</p></div></div>
+</section>
+
+<section class="section" id="checklist">
+<div class="section-head"><div class="num">✓</div><div><h2>車長快速檢查表</h2><p class="sub">可在手機上逐項勾選；重新整理頁面後勾選狀態會重置。</p></div></div>
+<div class="checklist">
+<label class="check"><input type="checkbox"><span>出發前確認車號、車長與小幫手姓名。</span></label>
+<label class="check"><input type="checkbox"><span>記住集合時間、各站停留時間及行程順序。</span></label>
+<label class="check"><input type="checkbox"><span>中壢服務區上下車後清點人數。</span></label>
+<label class="check"><input type="checkbox"><span>確認影片播放設備及有獎徵答題目。</span></label>
+<label class="check"><input type="checkbox"><span>頭城濱海公園前提醒車號、貴重物品與安全。</span></label>
+<label class="check"><input type="checkbox"><span>午餐前提醒名牌桌號，餐後再次清點人數。</span></label>
+<label class="check"><input type="checkbox"><span>提醒導覽機領取、保管與歸還安排。</span></label>
+<label class="check"><input type="checkbox"><span>抵達品雲岫後提醒領房卡、檢查房間及 16:30 集合。</span></label>
+</div>
+<div class="note"><strong>出發前待確認：</strong>車號（XXX-XXXX）、車別（O 車）、小幫手姓名、影片播放順序、各站最新停留時間，以及是否因天候調整頭城濱海公園行程。</div>
+</section>
+
+<section class="section" id="quiz">
+<div class="section-head"><div class="num">＋</div><div><h2>有獎徵答｜車長備用題目</h2><p class="sub">可直接用於車上互動；答案可按一下展開。</p></div></div>
+<details class="item"><summary class="item-title">第 1 題｜馬偕醫院的前身是什麼？</summary><div class="item-body">滬尾偕醫館（原始資料寫作「滬醫館」，建議正式使用前確認）。</div></details>
+<details class="item"><summary class="item-title">第 2 題｜馬偕博士的妻子是誰？</summary><div class="item-body">張聰明。</div></details>
+<details class="item"><summary class="item-title">第 3 題｜馬偕博士的綽號是什麼？</summary><div class="item-body">黑鬚番。</div></details>
+<details class="item"><summary class="item-title">第 4 題｜馬偕創辦、淡水中學前身的學堂是什麼？</summary><div class="item-body">牛津學堂。</div></details>
+<details class="item"><summary class="item-title">第 5 題｜馬偕相關詩歌〈最後的住家〉</summary><div class="item-body">原始資料提供的答案為〈最後的住家〉。</div></details>
+</section>
+</main>
+<footer class="footer">新竹北門聖教會・橄欖樹牧區｜馬偕行腳車長 Rundown<br><a class="toplink" href="#top">↑ 回到頁首</a></footer>
+</body>
+</html>
